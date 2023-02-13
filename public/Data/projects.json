@@ -1,0 +1,72 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "name": "Project A",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "status": "In Progress",
+        "owner":"David"
+      },
+      {
+        "id": 2,
+        "name": "Project B",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "status": "Completed",
+        "owner":"avram"
+
+      },
+      {
+        "id": 3,
+        "name": "Project C",
+        "description": "thinking of this flag is that it isn't doing something new; rather it's telling NPM not to do something new, since NPM v7 now installs peerDependencies by default.",
+        "status": "In Progress",
+        "owner":"nachman"
+      }
+      ,
+      {
+        "id": 4,
+        "name": "Project B",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "status": "Completed",
+        "owner":"yosef"
+      },
+      {
+        "id": 5,
+        "name": "Project C",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "status": "In Progress",
+        "owner":"yuval"
+      }
+      ,
+      {
+        "id": 6,
+        "name": "Project B",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "status": "Completed",
+        "owner":"israel"
+      },
+      {
+        "id": 7,
+        "name": "Project C",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "status": "Done",
+        "owner":"reuven"
+      }
+      ,
+      {
+        "id": 8,
+        "name": "Project v",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "status": "Completed",
+        "owner":"Mendi"
+      },
+      {
+        "id": 9,
+        "name": "Project h",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "status": "Done",
+        "owner":"rivka"
+      }
+    ]
+  }
+  

@@ -1,0 +1,17 @@
+{
+  "users":[
+    {
+      "id": 1,
+      "username": "israel",
+      "password": "israel123",
+      "firstName": "israel",
+      "lastName": "israel"
+    },
+    {
+      "id": 2,
+      "username": "dan",
+      "password": "danuna123",
+      "firstName": "dan",
+      "lastName": "danuna"
+    }
+  ]}

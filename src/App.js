@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route , Routes,Navigate } from 'react-router-dom';
+import LoginPage from './Components/Auth/LoginPage';
+import ProjectTable from './Components/projects/ProjectTable';
+
+function withAuth(Component) {
+  function AuthenticatedRoute(props) {
+    const user = JSON.parse(localStorage.getItem('user'));
+
+    if (!user) {
+      return <Navigate to="/" />;
+    }
+
+    return <Component {...props} />;
+  };
+
+  return AuthenticatedRoute();
+}
 
 function App() {
+ 
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <Routes>
+    <Route exact path="/" element={<LoginPage />} />
+    <Route exact path="/projects" element={withAuth(ProjectTable)}
+        />
+    </Routes>  
+    </Router>
   );
 }
+
+
 
 export default App;
