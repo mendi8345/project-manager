@@ -1,18 +1,24 @@
-const PROJECTS_URL = "../Data/projects.json";
+const PROJECTS_URL =  process.env.PUBLIC_URL + "/Data/projects.json";
 
-export const getProjects = async () => {
+
+export const 
+getProjects = async () => {
   try {
     const response = await fetch(PROJECTS_URL);
-    console.log(response)
-
+    if (!response.ok) {
+      throw new Error(`Failed to retrieve projects, status code: ${response.status}`);
+    }
     const data = await response.json();
-    console.log(data)
+    console.info("Successfully retrieved projects", data);
     return data.projects;
   } catch (error) {
-    console.error("Error getting projects", error);
-    return [];
+    console.error("Error getting projects:", error);
+    throw error;
   }
 };
+
+
+
 
 export const createProject = async (project) => {
   try {

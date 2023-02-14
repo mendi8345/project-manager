@@ -24,8 +24,7 @@ function App() {
     <Router>
     <Routes>
     <Route exact path="/" element={<LoginPage />} />
-    <Route exact path="/projects" element={withAuth(ProjectTable)}
-        />
+    <Route exact path="/projects" element={withAuth(ProjectTable)}/>
     </Routes>  
     </Router>
   );

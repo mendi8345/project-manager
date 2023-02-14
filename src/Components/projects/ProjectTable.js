@@ -23,13 +23,8 @@ function ProjectTable() {
   useEffect(() => {
     getProjects().then((data) => {
       setProjects(data);
-      console.log("Projects loaded successfully", projects);
     });
   },[]);
-
-  // useEffect(() => {
-  //   setShowPopup(selectedProject ? true : false);
-  // }, [selectedProject]);
 
   useEffect(() => {
     searchRef.current.focus();
@@ -37,7 +32,6 @@ function ProjectTable() {
 
   
   useEffect(() => {
-    console.log("sorted projects", projects);
     setFilterdProjects(projects);
   }, [projects]);
 
@@ -152,3 +146,5 @@ function ProjectTable() {
   );
 }
 export default ProjectTable;
+
+
