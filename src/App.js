@@ -5,15 +5,16 @@ import ProjectTable from './Components/projects/ProjectTable';
 function withAuth(Component) {
   function AuthenticatedRoute(props) {
     const user = JSON.parse(localStorage.getItem('user'));
-
+    console.log(user)
     if (!user) {
+      console.log("Authentication is required");
       return <Navigate to="/" />;
     }
 
     return <Component {...props} />;
   };
 
-  return AuthenticatedRoute();
+  return <AuthenticatedRoute />;
 }
 
 function App() {
